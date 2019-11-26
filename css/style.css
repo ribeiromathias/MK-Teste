@@ -1,0 +1,176 @@
+
+@font-face {
+    font-family: 'Nunito';
+    src: local('Nunito'), url('fonts/Nunito-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'NunitoExtraBold';
+    src: url('fonts/Nunito-ExtraBold.ttf');
+}
+
+.card {
+    border: none;
+}
+
+.bg-white {
+    background-color: white;
+}
+.bg-lightgrey {
+    background-color: #f5f5f5;
+}
+
+nav img {
+    max-width: 65%;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #000;
+}
+
+.nav-item {
+    margin-right: 10px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.card-body h5 {
+    margin-top:5%;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50px;
+    font-family: 'Nunito';
+    outline: none;  
+}
+
+.card-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight:500;
+    background-color: none;
+    outline: none;  
+}
+
+
+.card-header:first-child {
+    border-radius: 0px;
+}
+
+.card-header {
+    background-color: white;
+    border-bottom: 0px;
+    color: #007bff;
+}
+
+.card-header:hover {
+    text-decoration: none;
+    color: #007bff;
+    background-color: #ecfaff44;
+    box-shadow: 3px 4px 8px #2b79ce0a;
+    border-bottom: 0px;
+}
+
+.card-body h6 {
+    color: #007bff;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.through {
+    text-decoration: line-through;
+}
+
+.btn-newsletter {
+    padding: 12px 55px 10px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    font-family: 'Nunito';
+    font-weight: bold;
+    outline: none;
+}
+
+.btn-newsletter:hover {
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;  
+}
+
+.form-control::-webkit-input-placeholder {
+    color:#000;
+}
+
+.form-control::-moz-input-placeholder {
+    color:#000;
+}
+
+.form-control::-ms-input-placeholder {
+    color:#000;
+}
+
+.form-control {
+    color:#000;
+}
+
+textarea {
+    height: 160px !important;
+    resize: none;
+}
+
+.list-group-item {
+    border:none;
+}
+
+footer h4 {
+    font-size: 12px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.bg-blue {
+    background-color: #007bff;
+}
+
+
+@media (max-width: 576px) {
+
+    .card-img-top {
+        width: 50%;
+        margin: auto;
+    }
+
+    .btn-primary {
+        width: 30%;
+        margin: auto;
+    }
+
+    .card {
+        margin-top: 8%;
+    }
+
+    .navbar {
+        border-bottom: 1px solid lightgrey;
+    }
+
+}
+    
+    // Dispositivos médios (tablets com 768px ou mais)
+@media (max-width: 768px) {
+
+}
+    
+    // Dispositivos large (desktops com 992px ou mais)
+@media (max-width: 992px) { 
+
+}
+    
+    // Dispositivos extra large (desktops grandes com 1200px ou mais)
+@media (min-width: 1200px) {
+
+}

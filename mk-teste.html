@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="" width=device-width , initial-scale=1 , shrink-to-fit=no>
+	<title>MK Music</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>MK Music</title>
+	
+</head>
+
+<body>
+   	<div class="bg-lightgray">
+		<div class="container">
+		 	<div class="row">
+		    <div class="col-12">
+				<nav class="navbar navbar-expand-lg navbar-light bg-white">
+					<a class="navbar-brand" id="brand" href="#"><img :src="logo"></a>
+				  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Alterna navegação">
+				    	<span class="navbar-toggler-icon"></span>
+				  	</button>
+
+				 	<div class="collapse navbar-collapse" id="menuPrincipal">
+				   		<ul class="navbar-nav ml-auto">
+				     		<li class="nav-item active">
+				       			<a class="nav-link" href="#">Início <span class="sr-only">(página atual)</span></a>
+				     		</li>
+				     		<li class="nav-item">
+				       			<a class="nav-link" href="#">Sobre</a>
+				     		</li>
+				     		<li class="nav-item dropdown">
+				       			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          			Produtos</a>
+				  				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				      				<a class="dropdown-item" href="#">CD</a>
+				      				<a class="dropdown-item" href="#">DVD</a>
+				        			<a class="dropdown-item" href="#">Premiados</a>
+				                    <div class="dropdown-divider"></div>
+				       				<a class="dropdown-item" href="#">Melhor Avaliados</a>
+				                </div>
+				      		</li>
+				      		<li class="nav-item">
+				        		<a class="nav-link" href="#">Serviços</a>
+				      		</li>
+				      		<li class="nav-item">
+				        		<a class="nav-link" href="#">Imprensa</a>
+					  		</li>
+					  		<li class="nav-item">
+				       			 <a class="nav-link" href="#">Contatos</a>
+				      		</li>
+				    	</ul>
+					</div>
+				</nav>
+		  	</div>
+		 	</div>
+		</div>
+	</div>
+	
+	<div id="slider" class="carousel slide carousel-fade d-none d-sm-block" data-ride="carousel">
+		<ol class="carousel-indicators">
+	    	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	    	<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	    	<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  		</ol>
+	 
+		<div class="carousel-inner" id="carousel">
+      		<div class="carousel-item active">
+      			<img class="d-block w-100" :src="banner1" alt="Primeiro Slide">
+      		</div>
+      		<div class="carousel-item">
+      			<img class="d-block w-100" :src="banner2" alt="Segundo Slide">
+      		</div>
+      		<div class="carousel-item">
+      			<img class="d-block w-100" :src="banner3" alt="Terceiro Slide">
+    		</div>
+  		</div>
+   
+		<a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+    		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    		<span class="sr-only">Anterior</span>
+  		</a>
+  		<a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+    		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    		<span class="sr-only">Próximo</span>
+  		</a>
+	</div>
+
+	<div class="container">
+		<div class="row my-4">
+		<div class="col-12 my-4">
+			<h1 class="text-center">Mais Vistos</h1>
+		</div>
+		</div>
+
+   		<div class="card-deck m-auto" id="cd-line-1">
+
+			<div class="card text-center">
+	  			<img class="card-img-top" :src="cd1" alt="cd-capa">
+			  
+				<div class="card-body">
+					<h5 class="card-title">Midian Lima</h5>
+					<h6 class="card-subtitle text-muted my-3">Não Pare</h6>
+					<div class="card-header" id="headingOne">
+						<div class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							<a class="card-link">+ Sobre</a>
+						</div>
+					</div>
+					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#headingOne">
+						<ul class="card-body list-group list-group-flush">
+							<li class="list-group-item"><b>Lançamento:</b> 2019</li>
+							<li class="list-group-item through">R$ 34,99</li>
+						</ul>
+					</div>
+					<h6 class="card-subtitle text-muted my-3">R$ 29,99</h6>
+	 			</div>
+					<a href="#" class="btn btn-primary">Comprar</a>
+			</div>
+
+			<div class="card text-center">
+	 			<img class="card-img-top" :src="cd2" alt="cd-capa">
+		
+				<div class="card-body">
+		    		<h5 class="card-title">Kleber Lucas</h5>
+		    		<h6 class="card-subtitle text-muted my-3">M.O.S.A.I.C.O</h6>
+					<div class="card-header" id="headingTwo">
+						<div class="card-body collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							<a class="card-link">+ Sobre</a>
+						</div>
+					</div>
+				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#headingTwo">
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><b>Lançamento:</b> 2019</li>
+						<li class="list-group-item through">R$ 34,99</li>
+					</ul>
+	   			</div>
+				<h6 class="card-subtitle text-muted my-3">R$ 29,99</h6>
+			</div>
+				<a href="#" class="btn btn-primary">Comprar</a>
+	  		</div>
+
+	 		<div class="card text-center">
+	 		 	<img class="card-img-top" :src="cd3" alt="cd-capa">
+	  		<div class="card-body">
+				<h5 class="card-title">Elaine de Jesus</h5>
+				<h6 class="card-subtitle text-muted my-3">Glorioso</h6>
+				<div class="card-header" id="headingThree">
+					<div class="card-body collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						<a class="card-link">+ Sobre</a>
+					</div>
+				</div>
+				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#headingThree">
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><b>Lançamento:</b> 2019</li>
+						<li class="list-group-item through">R$ 34,99</li>
+					</ul>
+	   			</div>
+				<h6 class="card-subtitle text-muted my-3">R$ 29,99</h6>
+	 		    </div>
+					<a href="#" class="btn btn-primary">Comprar</a>
+				 </div>
+				 
+	 		<div class="card text-center">
+				<img class="card-img-top" :src="cd4" alt="cd-capa">
+			<div class="card-body">
+		 		<h5 class="card-title">Marine Friesen</h5>
+		    	<h6 class="card-subtitle text-muted my-3">Óleo de Alegria</h6>
+		  		<div class="card-header" id="headingFour">
+					<div class="card-body collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					<a class="card-link">+ Sobre</a>
+					</div>
+				</div>
+  
+			<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#headingFour">
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item"><b>Lançamento:</b> 2019</li>
+					<li class="list-group-item through">R$ 34,99</li>
+				</ul>
+			   </div>
+		  <h6 class="card-subtitle text-muted my-3">R$ 29,99</h6>
+		</div>
+		<a href="#" class="btn btn-primary">Comprar</a>
+	  </div>
+	</div>
+</div>
+
+<div class="container mt-5">
+
+    <div class="card-deck m-auto" id="cd-line-2">
+
+		<div class="card text-center">
+	  		<img class="card-img-top" :src="cd5" alt="cd-capa">
+			  
+			<div class="card-body">
+				<h5 class="card-title">João Marcos</h5>
+				<h6 class="card-subtitle text-muted my-3">Canto Livre</h6>
+				<div class="card-header" id="headingFive">
+						<div class="card-body collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+							<a class="card-link">+ Sobre</a>
+						</div>
+					</div>
+		  
+					<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#headingFive">
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item"><b>Lançamento:</b> 2019</li>
+							<li class="list-group-item through">R$ 34,99</li>
+						</ul>
+					   </div>
+
+				<h6 class="card-subtitle text-muted my-3">R$ 29,99</h6>
+	 		</div>
+			<a href="#" class="btn btn-primary">Comprar</a>
+		</div>
+
+		<div class="card text-center">
+	 		<img class="card-img-top" :src="cd6" alt="cd-capa">
+		
+			<div class="card-body">
+		    	<h5 class="card-title">Vaneyse</h5>
+		    	<h6 class="card-subtitle text-muted my-3">Tesouro</h6>
+				
+				<div class="card-header" id="headingSix">
+					<div class="card-body collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+						<a class="card-link">+ Sobre</a>
+					</div>
+				</div>
+				<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#headingSix">
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><b>Lançamento:</b> 2019</li>
+						<li class="list-group-item through">R$ 34,99</li>
+					</ul>
+	   			</div>
+				<h6 class="card-subtitle text-muted my-3">R$ 29,99</h6>
+			</div>
+				<a href="#" class="btn btn-primary">Comprar</a>
+	  	</div>
+
+	 	<div class="card text-center">
+	  		<img class="card-img-top" :src="cd7" alt="cd-capa">
+	  		<div class="card-body">
+				<h5 class="card-title">Elaine Martins</h5>
+				<h6 class="card-subtitle text-muted my-3">Muda o Meu Coração</h6>
+				<div class="card-header" id="headingSeven">
+					<div class="card-body collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+						<a class="card-link">+ Sobre</a>
+					</div>
+				</div>
+				<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#headingSeven">
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><b>Lançamento:</b> 2019</li>
+						<li class="list-group-item through">R$ 34,99</li>
+					</ul>
+	   			</div>
+				<h6 class="card-subtitle text-muted my-3">R$ 29,99</h6>
+	  		</div>
+				<a href="#" class="btn btn-primary">Comprar</a>
+		 </div>
+		 
+		<div class="card text-center">
+			<img class="card-img-top" :src="cd8" alt="cd-capa">
+			<div class="card-body">
+		  		<h5 class="card-title">Bekah Costa</h5>
+		  		<h6 class="card-subtitle text-muted my-3">Jesus</h6>
+		  		<div class="card-header" id="headingEight">
+					<div class="card-body collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+						<a class="card-link">+ Sobre</a>
+					</div>
+				</div>
+				<div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#headingEight">
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><b>Lançamento:</b> 2019</li>
+						<li class="list-group-item through">R$ 34,99</li>
+					</ul>
+				</div>
+		  		<h6 class="card-subtitle text-muted my-3">R$ 29,99</h6>
+			</div>
+				<a href="#" class="btn btn-primary">Comprar</a>
+	  	</div>
+	</div>
+</div>
+
+<div class="bg-lightgrey">
+    <div class="container bg-lightgrey py-5 mb-0 mt-5">
+    	<div class="row">
+    	 	 <div class="col-12 mb-5">
+    	  		<h2 class="text-center">Assine nossa Newsletter</h2>
+    	 	 </div>
+    	</div>
+
+    	<form>
+		  <div class="form-row justify-content-center">
+		    <div class="form-group col-4">
+		     	<input type="text" class="form-control" placeholder="Nome">
+		    </div>
+		    <div class="form-group col-4">
+		        <input type="text" class="form-control" placeholder="Sobrenome">
+		    </div>
+		    <div class="form-group col-8">
+		        <input type="email" class="form-control" placeholder="Email">
+		    </div>
+		    <div class="form-group col-8">
+		      <select class="form-control">
+		        <option selected>Selecione a frenquência de e-mail</option>
+		      	<option value="1">Semanalmente</option>
+		      	<option value="1">Mensalmente</option>
+		      	<option value="1">Somente Promoções</option>
+		      </select>
+		    </div>
+		    <div class="form-group col-8 text-center">
+		    	<input type="submit" class="btn-newsletter btn-dark" value="Cadastrar">
+		   </div>
+		  </div>
+		</form>
+	</div>
+</div>
+
+<footer class="container-fluid py-2 bg-blue">
+	<div class="row">
+		<div class="col-12 text-center">
+			<h4>Copyright © 2013 - MK Music | Rua Gotemburgo, 211 . São Cristóvão . Rio de Janeiro . RJ | Tel: (21) 3891-9300 | e-mail: sac@mkmusic.com.br</h4>
+		</div>
+	</div>
+</footer>
+
+
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+
+<script src="js/popper.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="main.js"></script>
+
+<script>
+
+	$('.carousel').carousel({
+  interval: 2500
+})
+
+</script>
+	
+</body>
+</html>
